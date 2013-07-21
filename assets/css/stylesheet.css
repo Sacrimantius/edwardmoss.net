@@ -1,0 +1,118 @@
+.hiddenlink{
+	position:absolute;
+	width: 5px;
+	height: 5px;
+	top:50px;
+	left:50px;
+}
+
+.icon{
+	height:30px;
+}
+
+body{
+background-color:#262626;
+color:#eee;
+padding-top: 60px;
+padding-bottom: 40px;
+}
+
+[class*="span"]{
+border-radius:10px;
+}
+
+.hero-unit{
+border-radius:10px;
+background-color: #454545;
+border: 1px solid #e3e3e3
+}
+
+.btn-personal {
+  color: #262626;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  *background-color: #f7b100;
+  background-image: -moz-linear-gradient(top, #ffe526, #f7b100);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe526), to(#f7b100));
+  background-image: -webkit-linear-gradient(top, #ffe526, #f7b100);
+  background-image: -o-linear-gradient(top, #ffe526, #f7b100);
+  background-image: linear-gradient(to bottom, #ffe526, #f7b100);
+  background-repeat: repeat-x;
+  border-color: #f7b100 #f7b100 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe526', endColorstr='#fff7b100', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-personal:hover,
+.btn-personal:focus,
+.btn-personal:active,
+.btn-personal.active,
+.btn-personal.disabled,
+.btn-personal[disabled] {
+  color: #262626;
+  background-color: #f7b100;
+  *background-color: #df8505;
+}
+
+.btn-personal:active,
+.btn-personal.active {
+  background-color: #c67605 \9;
+}
+
+.sidebar-nav {
+        padding: 9px 0;
+      }
+
+@media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+.navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+
+#canvasDiv.hero-unit{
+padding:0px;
+}
+
+#canvasLayer.hero-unit{
+padding:0px;
+}
+
+.well{
+  background-color: #454545
+}
+
+a:hover,
+a:focus {
+  color:#ecae04;
+}
+
+a{
+  color:#FAC125;
+}
+
+
+.nav-list > li > a,
+.nav-list .nav-header{
+  text-shadow:none;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #494949;
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+  color: #303030;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FAC125;
+}
+
+.canvasContainer{
+  position: relative;
+}
