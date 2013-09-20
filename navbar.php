@@ -7,7 +7,7 @@ $nav = array(
 		array( 'page' => '#', 'title' => 'My Stuff', 'active' => array( 'canvas.php', 'parse.php', 'video.php', 'warframe.php', 'leagueohlegends.php' ), 'dropdown' => array(
 				array( 'header' => 'Work' ),
 				array( 'page' => 'canvas.php', 'title' => '&ltCanvas&gt' ),
-				array( 'page' => 'parse.php', 'title' => 'Parse' ),
+				array( 'page' => 'blog.php', 'title' => 'Parse' ),
 				array( 'page' => 'video.php', 'title' => '&ltVideo&gt' ),
 				/*array( 'header' => 'Gaming' ),
 				array( 'page' => 'warframe.php', 'title' => 'Warframe' ),
