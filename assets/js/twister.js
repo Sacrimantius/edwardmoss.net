@@ -94,7 +94,7 @@ function spin(spinRemaining) {
   if (spinRemaining<=0){
     return;
   }
-  clearCanvas();
+  clearCanvas(context2, canvas2);
 
   renderTwister();
   renderPointer();

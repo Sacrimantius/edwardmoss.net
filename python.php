@@ -11,13 +11,20 @@
             <input type="submit" id="sub" name="sub" value="Send" style="width:90px" />
         </form>
         <script type="text/javascript">
-            var ws = new WebSocket("ws://localhost:8080/websocket");
+            var ws = new WebSocket("ws://<?php
+                if ( isset( $_SERVER['HTTP_HOST'] ) && strstr( $_SERVER['HTTP_HOST'], 'localhost' ) ) {
+                    echo "localhost";
+                } else {
+                    echo "54.229.156.242";
+                }
+            ?>:8001/websocket");
             ws.onmessage = function(evt){
                 x = document.createElement("p");
                 x.innerHTML = evt.data;
                 document.getElementById("chatbox").appendChild(x);
                 document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
                 console.log(evt);
+                console.log("Test");
             }
  
             function DispatchText(){

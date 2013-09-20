@@ -26,7 +26,7 @@ function drawImage(startX, startY, source, context){
   }
 }
 
-function clearCanvas(context){
-  context.clearRect(0, 0, canvas2.width, canvas2.height);
+function clearCanvas(context, canvas){
+  context.clearRect(0, 0, canvas.width, canvas.height);
 }
 
