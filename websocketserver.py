@@ -34,7 +34,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         print u"Outgoing Message: Recieved by %d People" %count
 
     def on_close(self):
-        print u"Closed"
+        print u"Closed Connection"
 
 
 
