@@ -29,7 +29,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
             count = 0;
             for socketid, player in Players.items():
                 if socketid != self.id:
-                    player[0].write_message(player[1].name + u": " + message)
+                    player[0].write_message(Players[self.id][1].name + u": " + message)
                     count = count + 1;
             print u"Outgoing Message: Recieved by %d People" %count
 
