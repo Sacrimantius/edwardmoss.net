@@ -4,7 +4,8 @@ import tornado.web
 import tornado.websocket
 import tornado.ioloop
 import uuid
-
+import random
+import math
 
 
 Players = {}
@@ -62,7 +63,11 @@ class Player(object):
             self.changeName(command.lstrip("changename "))
         elif command.startswith("createdeck"):
             print u"CreatingDeck"
-            RegularDeck()
+            self.deck = RegularDeck()
+        elif command.startswith("drawCard"):
+            print self.deck.drawCard()
+        elif command.startswith("shuffle"):
+            self.deck.shuffle()
 
 class Card(object):
 
@@ -73,11 +78,25 @@ class Card(object):
 class Deck(object):
 
     def __init__(self,cardlist):
-        Cards = cardlist
+        self.Cards = cardlist
         print u"Deck Created"
 
+    def drawCard(self):
+        cardvalue = self.Cards[0].value
+        cardtype = self.Cards[0].type
+        self.Cards.pop(0)
+        return (cardvalue, cardtype)
+
     def shuffle(self):
-        print u"Suffled"
+        print u"Begin Shuffling"
+        tempdeck = []
+        for i in self.Cards:
+            tempcard = int(math.floor(random.random() * len(self.Cards)))
+            tempdeck.append(self.Cards[tempcard])
+            self.Cards.pop(tempcard)
+        self.Cards = tempdeck
+        print u"Finished Shuffling"
+
 
 class RegularDeck(Deck):
 
