@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
+		<!-- Hosted on AWS-->
 		<title>Edward Moss | Homepage</title>
 		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
