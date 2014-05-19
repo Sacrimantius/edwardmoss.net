@@ -26,9 +26,7 @@ $('.slideShowLink').click(function(){
   loadSlideShow($(this).data('value'));
 });
 
-$('#savePlayer').click(
-	loadPlayer();
-);
+$('#savePlayer').click(loadPlayer);
 
 $('#showhideColorPicker').click(function (){ 
 if($('#colorPicker').css('display') == 'none'){ 

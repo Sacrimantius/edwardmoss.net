@@ -8,8 +8,8 @@ $nav = array(
 				array( 'header' => 'Work' ),
 				array( 'page' => 'canvas.php', 'title' => '&ltCanvas&gt' ),
 				array( 'page' => 'blog.php', 'title' => 'Parse' ),
-				array( 'page' => 'video.php', 'title' => '&ltVideo&gt' ),
-				/*array( 'header' => 'Gaming' ),
+				/*array( 'page' => 'video.php', 'title' => '&ltVideo&gt' ),
+				array( 'header' => 'Gaming' ),
 				array( 'page' => 'warframe.php', 'title' => 'Warframe' ),
 				array( 'page' => 'leagueoflegends.php', 'title' => 'League of Legends' ),*/
 			) ),

@@ -110,12 +110,27 @@
 
     <!-- Le javascript
     ================================================== -->
+    <script>
+
+      var canvasDiv = document.getElementById('canvasDiv');
+      canvas = document.createElement('canvas');
+      canvas.setAttribute('width', $('#canvasDiv').width());
+      canvas.setAttribute('height', $('#canvasDiv').height());
+      canvas.setAttribute('id', 'canvas');
+      canvasDiv.appendChild(canvas);
+      context = document.getElementById('canvas').getContext("2d");
+      if(typeof G_vmlCanvasManager != 'undefined') {
+        canvas = G_vmlCanvasManager.initElement(canvas);
+      }
+      context = canvas.getContext("2d");
+
+    </script>
     <!-- Placed at the end of the document so the pages load faster -->
 		<script src="assets/js/jquery.js"></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+    <!--<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>-->
     <script src="assets/js/canvasCommands.js"></script>
-		<script src="assets/js/canvas.js"></script>
+    <script src="assets/js/canvas.js"></script>
     <script src="assets/js/parse.js"></script>
     <script src="assets/farbtastic/farbtastic.js"></script>
     <script src="assets/js/javascript.js"></script>

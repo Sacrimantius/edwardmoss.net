@@ -1,6 +1,4 @@
-$('.nextSlide').click(function(){
-	drawNextSlide();
-});
+$('.nextSlide').click(drawNextSlide);
 
 $('.alterBackground').click(function(){
 
@@ -8,39 +6,31 @@ $('.alterBackground').click(function(){
 
 });
 
-$('.wipeScreen').click(function(){
-
-	wipeScreen();
-
-});
+$('.wipeScreen').click(wipeScreen);
 
 
 $('.drawPath').click(function(){
 
-	drawPath($('#startX').val(),$('#startY').val(),$('#endX').val(),$('#endY').val());
+	drawPath($('#startX').val(),$('#startY').val(),$('#endX').val(),$('#endY').val(), context);
 
 });
 
 $('.drawArc').click(function(){
 
-	drawArc($('#startX').val(),$('#startY').val(),$('#radius').val(),$('#endX').val(),$('#endY').val());
+	drawArc($('#startX').val(),$('#startY').val(),$('#radius').val(),$('#endX').val(),$('#endY').val(), context);
 
 });
 
 $('.drawQuad').click(function(){
 
-	drawQuad($('#startX').val(),$('#startY').val(),$('#endX').val(),$('#endY').val());
+	drawQuad($('#startX').val(),$('#startY').val(),$('#endX').val(),$('#endY').val(), context);
 
 });
 
 $('.drawImage').click(function(){
 
-	drawImage($('#startX').val(),$('#startY').val(),$('#source').val());
+	drawImage($('#startX').val(),$('#startY').val(),$('#source').val(), context);
 
 });
 
-$('.loadDoodle').click(function(){
-
-	loadSlide();
-
-});
+$('.loadDoodle').click(loadSlide);
